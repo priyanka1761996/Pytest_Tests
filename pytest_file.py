@@ -9,7 +9,7 @@ def test_greater_than_equal():
 @pytest.mark.greater
 def test_greater():
     num = 100
-    assert num<80
+    assert num>80
 
 @pytest.mark.skip
 @pytest.mark.less
