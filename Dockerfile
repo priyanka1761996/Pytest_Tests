@@ -1,5 +1,7 @@
+
 FROM python:latest
-COPY . .
-RUN pip install
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
 EXPOSE 8000
-CMD ["pytest", "test_failure.py"]
+CMD ["pytest", "tests/"]
